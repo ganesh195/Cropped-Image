@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cropper JS</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="head">
+        <h2>Add Images/Icon</h2>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="image-container">
+                <img id="image">
+            </div>
+
+        </div>
+
+        <div class="options hide">
+            <input type="number" id="height-input" placeholder="Enter Height" max="780" />
+            <input type="number" id="width-input" placeholder="Enter Width" max="780" />
+            <button class="aspect-ratio-button">16:9</button>
+            <button class="aspect-ratio-button">4:3</button>
+            <button class="aspect-ratio-button">1:1</button>
+            <button class="aspect-ratio-button">2:3</button>
+            <button class="aspect-ratio-button">Free</button>
+        </div>
+
+        <div class="btns">
+            <button id="preview" class="hide">Preview</button>
+            <a href="" id="download" class="hide">Download</a>
+        </div>
+
+        <div class="border">
+            <p class="par">Upload Images</p>
+            
+            <input type="file" name="" id="file" accept="image/*" />
+
+            <label for="file">Choose a Photo</label>
+        </div>
+
+        <div class="preview-container">
+            <img id="preview-image">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
